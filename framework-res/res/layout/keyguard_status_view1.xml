@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.policy.impl.keyguard.KeyguardWidgetFrame android:gravity="center_horizontal" android:id="@id/keyguard_status_view1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_maxHeight="@dimen/keyguard_security_height" android:layout_maxWidth="@dimen/keyguard_security_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.internal.policy.impl.keyguard.KeyguardStatusView android:gravity="top|center" android:orientation="vertical" android:id="@id/keyguard_status_view_face_palm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/keyguard_accessibility_status">
+        <LinearLayout android:layout_gravity="top|center" android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.internal.policy.impl.keyguard.ClockView2 android:layout_gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip">
+                <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView1" />
+                <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView2" />
+                <ImageView android:id="@id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView3" />
+                <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageView4" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/lockscreen_clock_foreground" android:ellipsize="none" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="36.0dip" android:singleLine="true" android:layout_toRightOf="@id/imageView5" />
+            </com.android.internal.policy.impl.keyguard.ClockView2>
+            <include layout="@layout/keyguard_status_area1" />
+        </LinearLayout>
+    </com.android.internal.policy.impl.keyguard.KeyguardStatusView>
+</com.android.internal.policy.impl.keyguard.KeyguardWidgetFrame>
